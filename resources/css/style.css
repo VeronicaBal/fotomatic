@@ -72,12 +72,23 @@ nav li {
   list-style: none;
 }
 
+nav li:last-child {
+  display: none;
+}
+
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
   text-decoration: none;
+}
+
+nav .button {
+  padding: .1875rem .5rem;
+  background-color: #9dc20b;
+  line-height: 1.6;
+  color: white;
 }
 
 header .icon {
@@ -89,7 +100,18 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    /* padding: 1rem 1rem; */
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
   header .desktop {
     display: none;
   }
@@ -133,6 +155,8 @@ header .mobile {
   height: 43.5rem;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: right; 
 }
 
 #sign-up-cta {
@@ -178,13 +202,11 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
     height: 28rem;
-    background-size: cover; 
-    background-position: right; 
     overflow: hidden;
   }
 
@@ -214,9 +236,9 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #sign-up-section {
-    height: 20rem;
+    margin-top: -10px;
   }
 
   #sign-up-cta h1 {
@@ -367,7 +389,10 @@ header .mobile {
 }
 
 #quotes-section .content {
-  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
 }
 
 #quotes-section .quote {
@@ -383,8 +408,15 @@ header .mobile {
   height: 1.875rem;
 }
 
+@media only screen and (max-width: 895px) {
+  #quotes-section .content {
+    padding: 3rem 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   #quotes-section .content {
+    flex-flow: column;
     padding: 1.875rem .625rem;
   }
 
