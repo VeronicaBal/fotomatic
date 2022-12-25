@@ -183,6 +183,8 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    background-size: cover; 
+    background-position: right; 
   }
 
   #sign-up-cta {
@@ -191,6 +193,7 @@ header .mobile {
     height: auto;
     background-color: transparent;
     border: none;
+    margin: auto;
   }
 
   #sign-up-cta .content {
