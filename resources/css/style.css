@@ -185,6 +185,7 @@ header .mobile {
     height: 28rem;
     background-size: cover; 
     background-position: right; 
+    overflow: hidden;
   }
 
   #sign-up-cta {
@@ -290,7 +291,7 @@ header .mobile {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem 1rem 1.875rem 1rem;
   }
 }
 
@@ -383,7 +384,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
